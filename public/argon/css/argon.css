@@ -19156,7 +19156,8 @@ textarea[resize='horizontal']
 
 .navbar-vertical
 {
-    box-shadow: 0 0 2rem 0 rgba(136, 152, 170, .15) !important;
+    box-shadow: 0 0 2rem 0 rgba(136, 152, 170, .35) !important;
+    z-index: 2;
 }
 .navbar-vertical .navbar
 {
