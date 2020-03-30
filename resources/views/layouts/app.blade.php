@@ -26,9 +26,7 @@
         
 
         <style>
-            #navbar-main {
-                background: #5e72e4;
-            }
+            
             select {
                 padding: 10px;
                 border: 0;
