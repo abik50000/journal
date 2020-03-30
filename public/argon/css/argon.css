@@ -15435,12 +15435,12 @@ button.section-darker:focus
 
 .bg-gradient-primary
 {
-    background: linear-gradient(87deg, #5e72e4 0, #825ee4 100%) !important;
+    background: linear-gradient(87deg, #14cc7f 0, #5ee46e 100%) !important;
 }
 
 .bg-gradient-secondary
 {
-    background: linear-gradient(87deg, #f7fafc 0, #f7f8fc 100%) !important;
+    background: linear-gradient(87deg, #14cc7a 0, #5ee46a 100%) !important;
 }
 
 .bg-gradient-success
