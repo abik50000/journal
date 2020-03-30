@@ -21920,3 +21920,10 @@ html:not([dir='rtl']) .noUi-horizontal .noUi-handle
     border: 0;
 }
 
+.footer {
+    padding: 20px 30px;
+    border-top: 1px solid #f2f2f2;
+    color: #a9adb1;
+    background: #fff;
+}
+
