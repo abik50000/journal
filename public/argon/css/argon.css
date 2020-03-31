@@ -21921,9 +21921,11 @@ html:not([dir='rtl']) .noUi-horizontal .noUi-handle
 }
 body {
     position: relative;
+    min-height: 100vh;
 }
 footer {
     padding: 20px 30px;
+    width: 100%;
     border-top: 1px solid #f2f2f2;
     color: #a9adb1;
     background: #fff;
