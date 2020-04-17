@@ -46,6 +46,15 @@
 
         <div class="wrapper">
             @auth()
+              <div class="ms">
+                  
+              </div>
+              <div class="subwrapper">
+            @endauth
+
+
+            @auth()
+
                 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                     @csrf
                 </form>
@@ -57,16 +66,17 @@
                 @yield('content')
             </div>
             
-            @auth()
-                @include('layouts.footers.auth')
-            @endauth
+            
             
 
 
             @guest()
                 @include('layouts.footers.guest')
             @endguest
-        
+            
+            @auth()
+              </div>
+            @endauth
         </div>
 
 

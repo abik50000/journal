@@ -201,3 +201,15 @@ footer {
         min-width: 1200px;
     }
 }
+
+.ms {
+    width: 50px;
+    height: 100%;
+    border-right: 2px solid #f0f0f0;
+    transition: 0.3s all ease;
+    background: #f9f9f9;
+}
+.subwrapper {
+    margin-left: 50px;
+}
+
