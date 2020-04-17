@@ -135,6 +135,10 @@ footer {
     flex-direction: row;
         padding: 16px;
         margin-bottom: 10px;
+        transition: 0.3s all ease;
+}
+.row.card:hover {
+    box-shadow: 0 0 20px #d4d4d4;
 }
 .subject p.subject-title {
     font-weight: 700;
@@ -143,3 +147,7 @@ footer {
     margin-bottom: 0;
     color: #000;
 }
+
+
+/*******/
+
