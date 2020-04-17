@@ -14,7 +14,6 @@
 }
 body {
     position: relative;
-    min-height: 100vh;
 }
 footer {
     padding: 20px 30px;
@@ -174,8 +173,9 @@ footer {
     border-radius: 15px;
     background: #fff;
     border: 2px solid #f0f0f0;
-    margin-top: 10vh;
-    min-height: 80vh;
+    margin-top: 5vh;
+    min-height: 90vh;
+    position: relative;
 }
 
 @media(min-width: 768px) {
