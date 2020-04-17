@@ -10,8 +10,6 @@
         <title>{{ config('app.name', 'Дневник') }}</title>
         <!-- Favicon -->
         <link href="{{ asset('argon') }}/img/brand/favicon.png" rel="icon" type="image/png">
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
         <!-- Icons -->
         <link href="{{ asset('argon') }}/vendor/nucleo/css/nucleo.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0-alpha14/css/tempusdominus-bootstrap-4.min.css" />
@@ -19,6 +17,7 @@
         <!-- Argon CSS -->
         <link href="/js/select2/select2.min.css" rel="stylesheet" />
         <link type="text/css" href="{{ asset('argon') }}/css/argon.css?v=1.0.0" rel="stylesheet">
+        <link type="text/css" href="/css/style.css" rel="stylesheet">
 
         <link type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
         
@@ -51,6 +50,12 @@
             @include('layouts.navbars.navbar')
             @yield('content')
         </div>
+        
+        @auth()
+            @include('layouts.footers.auth')
+        @endauth
+        
+
 
         @guest()
             @include('layouts.footers.guest')
@@ -73,6 +78,12 @@
             let footerHeight = $('footer').innerHeight();
             $('body').css('padding-bottom', footerHeight + ' px');
         </script>
+        <script>
+            $('#sidenav-open').click(function() {
+                $('body').toggleClass('menu-open');
+            });
+        </script>
+
         <!-- Argon JS -->
         <script src="{{ asset('argon') }}/js/argon.js?v=1.0.0"></script>
     </body>
