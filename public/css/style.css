@@ -14,7 +14,7 @@
 }
 body {
     position: relative;
-    background-color: #fff7e9;
+    background-color: #e9f5ff;
 }
 footer {
     padding: 20px 30px;
@@ -226,11 +226,25 @@ body.menu-open  .ms{
     margin-left: 0;
     transition: 0.25s all ease;
 }
+.ms .navbar-nav {
+    margin-top: 10px;
+}
+.navbar-nav .nav-link {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+}
 .navbar-nav .nav-link i {
     width: 40px;
-    padding: 6px 15px;
+    padding: 0 15px;
     /* display: block; */
     box-sizing: content-box;
     text-align: center;
     font-size: 22px;
+}
+#sidenav-open {
+        font-size: 22px;
+    color: #007dff;
+    width: 100%;
+    padding: 20px 0;
 }
