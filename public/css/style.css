@@ -147,7 +147,7 @@ footer {
 .row.card:hover svg {
     left: -2px;
 } 
-.row.card:hover p {
+.row.card:hover p { 
     top: 2px;
 }
 .row.card:hover p.subject-title {
