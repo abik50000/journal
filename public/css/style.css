@@ -201,7 +201,9 @@ footer {
         min-width: 1200px;
     }
 }
-
+.ms .navbar-nav {
+    width: 300px;
+}
 .ms {
     width: 70px;
     height: 90vh;
@@ -210,6 +212,7 @@ footer {
     transition: 0.3s all ease;
     background: #fff;
     left: 0;
+    z-index: 2;
 }
 .subwrapper {
     margin-left: 72px;
