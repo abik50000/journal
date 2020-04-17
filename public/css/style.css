@@ -226,7 +226,7 @@ body.menu-open  .ms{
     margin-left: 0;
     transition: 0.25s all ease;
 }
-.navbar-nav .nav-link {
+.navbar-nav .nav-link i {
     width: 40px;
     padding: 6px 15px;
     /* display: block; */
