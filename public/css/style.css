@@ -216,7 +216,7 @@ footer {
     overflow: hidden;
 }
 .subwrapper {
-    margin-left: 72px;
+    margin-left: 70px;
 }
 
 body.menu-open  .ms{
@@ -229,22 +229,29 @@ body.menu-open  .ms{
 .ms .navbar-nav {
     margin-top: 10px;
 }
-.navbar-nav .nav-link {
+.ms .navbar-nav .nav-link {
     display: flex;
     align-items: center;
-    padding: 15px 0;
+    padding: 10px 0;
 }
-.navbar-nav .nav-link i {
+.ms .navbar-nav .nav-link i {
     width: 40px;
-    padding: 0 15px;
+    padding: 10px 15px;
     /* display: block; */
     box-sizing: content-box;
     text-align: center;
+    border-left: 2px solid #fff;
     font-size: 22px;
+    transition: all 0.3s ease;
+}
+.ms .navbar-nav .nav-link.active  i {
+    border-left: 2px solid #007dff;
 }
 #sidenav-open {
         font-size: 22px;
-    color: #007dff;
-    width: 100%;
+    color: #007dff;width: 100%;
     padding: 20px 0;
+}
+.nav-link:hover {
+    color: #007dff;
 }
