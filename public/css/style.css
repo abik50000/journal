@@ -169,11 +169,32 @@ footer {
 /*******/
 
 .wrapper {
-    width: 1024px;
+    width: 100%;
     margin: 0 auto;
     border-radius: 15px;
     background: #fff;
     border: 2px solid #f0f0f0;
     margin-top: 10vh;
     min-height: 80vh;
+}
+
+@media(min-width: 768px) {
+    .wrapper {
+        width: 740px;
+    }
+}
+@media(min-width: 1024px) {
+    .wrapper {
+        width: 960px;
+    }
+}
+@media(min-width: 1200px) {
+    .wrapper {
+        width: 1140px;
+    }
+}
+@media(min-width: 1340px) {
+    .wrapper {
+        width: 1200px;
+    }
 }
