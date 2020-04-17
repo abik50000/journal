@@ -47,7 +47,21 @@
         <div class="wrapper">
             @auth()
               <div class="ms">
-                  
+                  @if(Auth::user()->isAdmin()) 
+                    @include('layouts.navbars.menu.admin')
+                @endif
+
+                @if(Auth::user()->isStudent()) 
+                    @include('layouts.navbars.menu.student')
+                @endif
+
+                @if(Auth::user()->isTeacher()) 
+                    @include('layouts.navbars.menu.teacher')
+                @endif
+
+                @if(Auth::user()->isParent()) 
+                    @include('layouts.navbars.menu.parent')
+                @endif
               </div>
               <div class="subwrapper">
             @endauth
@@ -79,7 +93,7 @@
             @endauth
         </div>
 
-
+        
         
 
 
