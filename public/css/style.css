@@ -213,6 +213,7 @@ footer {
     background: #fff;
     left: 0;
     z-index: 2;
+    overflow: hidden;
 }
 .subwrapper {
     margin-left: 72px;
@@ -224,4 +225,12 @@ body.menu-open  .ms{
 .main-content {
     margin-left: 0;
     transition: 0.25s all ease;
+}
+.navbar-nav .nav-link {
+    width: 40px;
+    padding: 6px 15px;
+    /* display: block; */
+    box-sizing: content-box;
+    text-align: center;
+    font-size: 22px;
 }
