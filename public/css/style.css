@@ -140,12 +140,23 @@ footer {
 .row.card:hover {
     box-shadow: 0 0 20px #d4d4d4;
 }
+.row.card svg {
+    position: relative;
+}
+.row.card:hover svg {
+    left: -2px;
+} 
+.row.card:hover p {
+    top: 2px;
+}
 .subject p.subject-title {
     font-weight: 700;
 }
 .subject p {
     margin-bottom: 0;
+    position: relative;
     color: #000;
+    transition: 0.3s all ease;
 }
 
 
