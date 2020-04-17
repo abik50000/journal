@@ -47,6 +47,7 @@
         <div class="wrapper">
             @auth()
               <div class="ms">
+                <ul class="navbar-nav">
                   @if(Auth::user()->isAdmin()) 
                     @include('layouts.navbars.menu.admin')
                 @endif
@@ -62,6 +63,7 @@
                 @if(Auth::user()->isParent()) 
                     @include('layouts.navbars.menu.parent')
                 @endif
+            </ul>
               </div>
               <div class="subwrapper">
             @endauth
