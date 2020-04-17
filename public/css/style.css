@@ -255,3 +255,10 @@ body.menu-open  .ms{
 .nav-link:hover {
     color: #007dff;
 }
+.nav-link .text-primary {
+    color: #e5e5e5 !important;
+}
+.nav-link:hover .text-primary,
+.nav-link.active .text-primary {
+    color: #007dff !important;
+}
