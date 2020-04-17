@@ -203,13 +203,15 @@ footer {
 }
 
 .ms {
-    width: 50px;
-    height: 100%;
-    border-right: 2px solid #f0f0f0;
+    width: 70px;
+    height: 90vh;
+    position: absolute;
+    border-right: 2px solid #f3f3f3;
     transition: 0.3s all ease;
-    background: #f9f9f9;
+    background: #fff;
+    left: 0;
 }
 .subwrapper {
-    margin-left: 50px;
+    margin-left: 72px;
 }
 
