@@ -39,27 +39,39 @@
         </style>
     </head>
     <body class="{{ $class ?? '' }}">
-        @auth()
-            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                @csrf
-            </form>
-            @include('layouts.navbars.sidebar')
-        @endauth
+
+
+
+
+
+        <div class="wrapper">
+            @auth()
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                    @csrf
+                </form>
+                @include('layouts.navbars.sidebar')
+            @endauth
+            
+            <div class="main-content">
+                @include('layouts.navbars.navbar')
+                @yield('content')
+            </div>
+            
+            @auth()
+                @include('layouts.footers.auth')
+            @endauth
+            
+
+
+            @guest()
+                @include('layouts.footers.guest')
+            @endguest
         
-        <div class="main-content">
-            @include('layouts.navbars.navbar')
-            @yield('content')
         </div>
-        
-        @auth()
-            @include('layouts.footers.auth')
-        @endauth
-        
 
 
-        @guest()
-            @include('layouts.footers.guest')
-        @endguest
+        
+
 
 		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
         <script src="{{ asset('argon') }}/vendor/jquery/dist/jquery.min.js"></script>

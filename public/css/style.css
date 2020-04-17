@@ -168,3 +168,12 @@ footer {
 
 /*******/
 
+.wrapper {
+    width: 1024px;
+    margin: 0 auto;
+    border-radius: 15px;
+    background: #fff;
+    border: 2px solid #f0f0f0;
+    margin-top: 10vh;
+    min-height: 80vh;
+}
