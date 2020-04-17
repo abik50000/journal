@@ -105,8 +105,8 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0-alpha14/js/tempusdominus-bootstrap-4.min.js"></script>
         <script src="{{ asset('argon') }}/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
         <script src="/js/select2/select2.min.js"></script>
-<!--         <script src="/js/require.js"></script>
- -->        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <!--         <script src="/js/require.js"></script> -->        
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
         @stack('js')
         @yield('scripts')

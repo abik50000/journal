@@ -212,6 +212,13 @@ footer {
     left: 0;
 }
 .subwrapper {
-    margin-left: 70px;
+    margin-left: 72px;
 }
 
+body.menu-open  .ms{
+    width: 300px;
+}
+.main-content {
+    margin-left: 0;
+    transition: 0.25s all ease;
+}
