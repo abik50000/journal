@@ -287,16 +287,16 @@ body.menu-open  .ms{
     text-transform: none;
     will-change: transform;
 }
-.btn-primary {
-    color: #fff;
-    border-color: #4bde72;
-    background-color: #50df72;
+.btn-success {
+    color: #48cc68;
+    border-color: #42ca66;
+    background-color: #fff;
     box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
 }.btn:hover {
     transform: translateY(-1px);
     box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08);
-}.btn-primary:hover {
-    color: #48cc68;
+}.btn-success:hover {
+    color: #fff;
     border-color: #42ca66;
-    background-color: #fff;
+    background-color: #42ca66;
 }
