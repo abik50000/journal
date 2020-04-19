@@ -89,13 +89,15 @@
             
 
 
-            @guest()
-                @include('layouts.footers.guest')
-            @endguest
+            
             
             @auth()
               </div>
             @endauth
+
+            @guest()
+                @include('layouts.footers.guest')
+            @endguest
         </div>
 
         
