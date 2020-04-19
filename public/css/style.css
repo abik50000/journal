@@ -301,7 +301,7 @@ box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08);
     border-color: #42ca66;
     background-color: #42ca66;
 }
-@media(max-width: 568px) {
+@media(min-width: 568px) {
     .only-mob {
         display: none !important;
     }
@@ -323,6 +323,7 @@ box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08);
     }
     .ms .navbar-nav {
         flex-direction: row;
+        width: 100%;
     }
     .ms .navbar-nav .nav-link {
         width: 20%;
