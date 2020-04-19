@@ -301,3 +301,35 @@ body.menu-open  .ms{
     border-color: #42ca66;
     background-color: #42ca66;
 }
+
+
+@media(max-width: 567px) {
+    .ms {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 70px;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+    }
+    #sidenav-open {
+        width: 20%;
+    }
+    .ms .navbar-nav {
+        flex-direction: row;
+    }
+    .ms .navbar-nav .nav-link {
+        width: 20%;
+        box-sizing: border-box;
+        flex-direction: column;
+    }
+    .ms .navbar-nav .nav-link i {
+        border-left: 0;
+    }
+    .ms .nav-link span {
+        font-size: 10px;
+    }
+}
