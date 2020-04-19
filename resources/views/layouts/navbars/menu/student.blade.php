@@ -1,6 +1,6 @@
 <li class="nav-item only-mob">
-    <a class="nav-link active" href="/mobile-menu">
-        <i class="ni ni-tv-2 text-primary"></i>
+    <a class="nav-link" href="/mobile-menu">
+        <i class="fas fa-users text-primary"></i>
         <span>{{ __('Меню') }}</span> 
     </a>
 </li>
