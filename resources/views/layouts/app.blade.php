@@ -38,10 +38,10 @@
             }
         </style>
     </head>
-    <body class="{{ $class ?? '' }}">
+    <body>
 
 
-
+ 
 
 
         <div class="wrapper">
