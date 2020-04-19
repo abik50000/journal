@@ -3,23 +3,12 @@
 @section('content')
     @include('layouts.headers.guest')
 
-    <div class="container mt--8 pb-5">
+
+<div class="header py-7 py-lg-8">
+    <div class="container pb-5">
         <div class="row justify-content-center">
             <div class="col-lg-5 col-md-7">
-                <div class="card bg-secondary shadow border-0">
-<!--                     <div class="card-header bg-transparent pb-5">
-                        <div class="text-muted text-center mt-2 mb-3"><small>{{ __('Войти с помощью') }}</small></div>
-                        <div class="btn-wrapper text-center">
-                            <a href="#" class="btn btn-neutral btn-icon">
-                                <span class="btn-inner--icon"><img src="{{ asset('argon') }}/img/icons/common/github.svg"></span>
-                                <span class="btn-inner--text">{{ __('Github') }}</span>
-                            </a>
-                            <a href="#" class="btn btn-neutral btn-icon">
-                                <span class="btn-inner--icon"><img src="{{ asset('argon') }}/img/icons/common/google.svg"></span>
-                                <span class="btn-inner--text">{{ __('Google') }}</span>
-                            </a>
-                        </div>
-                    </div> -->
+ 
                     <div class="card-body px-lg-5 py-lg-5">
 
                         <form role="form" method="POST" action="{{ route('login') }}">
@@ -80,4 +69,11 @@
             </div>
         </div>
     </div>
+</div>
+
+    <div class="container mt--10 pb-5"></div>
+
+
+
+    
 @endsection
