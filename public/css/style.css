@@ -307,6 +307,15 @@ box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08);
     }
 }
 @media(max-width: 567px) {
+    body {
+        padding-bottom: 0;
+    }
+    .subwrapper {
+        margin-left: 0;
+    }
+    .navbar-vertical {
+        width: 100%;
+    left: 0;}
     .ms {
         position: fixed;
         bottom: 0;
@@ -338,5 +347,8 @@ box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08);
     }
     .ms .nav-link span {
         font-size: 10px;
+    }
+    .navbar-toggler {
+        display: none;
     }
 }
