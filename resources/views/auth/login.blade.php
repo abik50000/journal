@@ -9,7 +9,7 @@
         <div class="row justify-content-center">
             <div class="col-lg-5 col-md-7">
  
-                    <div class="card-body px-lg-9 py-lg-9">
+                    <div class="card-body px-lg-5 py-lg-7">
 
                         <form role="form" method="POST" action="{{ route('login') }}">
                             @csrf

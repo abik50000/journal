@@ -15,6 +15,7 @@
 body {
     position: relative;
     background-color: #e9f5ff;
+    padding-bottom: 50px;
 }
 footer {
     padding: 20px 30px;
