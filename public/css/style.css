@@ -312,8 +312,12 @@ box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08);
     .wrapper {
         padding-bottom: 0;
     }
+
 }
 @media(max-width: 567px) {
+    .flexer {
+        display: none !important;
+    }
     .wrapper {
         margin-top: 0;
         padding-bottom: 60px;
@@ -366,4 +370,18 @@ box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08);
 
 .navbar-horizontal .navbar-brand img {
     height: 33px;
+}
+#sidenav-open {
+    width: 70px;
+}
+.flexer {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
+}
+.flexer img {
+    height: 35px;
 }
