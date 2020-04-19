@@ -267,6 +267,7 @@ body.menu-open  .ms{
     width: 200px;
     display: block;
     margin-bottom: 15px;
+    border-radius: 10px;
 }
 @media(min-width: 576px){
    .welcome-img {
