@@ -279,7 +279,7 @@ body.menu-open  .ms{
         width: 500px;
     } 
 }
-/*
+
 .btn {
     font-size: .875rem;
     position: relative;
@@ -297,7 +297,7 @@ body.menu-open  .ms{
     transform: translateY(-1px);
     box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08);
 }.btn-primary:hover {
-    color: #fff;
+    color: #48cc68;
     border-color: #42ca66;
-    background-color: #48cc68;
-}*/
+    background-color: #fff;
+}
