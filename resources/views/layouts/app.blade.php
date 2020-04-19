@@ -49,8 +49,9 @@
               <div class="ms">
                 <a class="btn" id="sidenav-open">
                     <i class="fa fa-bars"></i>
-                    <img src="/img/logo.png" alt="">
+
                 </a>
+                <img src="/img/logo.png" alt="">
                 <ul class="navbar-nav">
                     @if(Auth::user()->isAdmin()) 
                         @include('layouts.navbars.menu.admin')
