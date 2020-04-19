@@ -295,14 +295,17 @@ body.menu-open  .ms{
     box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
 }.btn:hover {
     transform: translateY(-1px);
-    box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08);
+box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08);
 }.btn-success:hover {
     color: #fff;
     border-color: #42ca66;
     background-color: #42ca66;
 }
-
-
+@media(max-width: 568px) {
+    .only-mob {
+        display: none !important;
+    }
+}
 @media(max-width: 567px) {
     .ms {
         position: fixed;
@@ -316,7 +319,7 @@ body.menu-open  .ms{
         display: flex;
     }
     #sidenav-open {
-        width: 20%;
+        display: none;
     }
     .ms .navbar-nav {
         flex-direction: row;
@@ -327,7 +330,7 @@ body.menu-open  .ms{
         flex-direction: column;
     }
     .ms .navbar-nav .nav-link i {
-        border-left: 0;
+        border-left: none;
     }
     .ms .nav-link span {
         font-size: 10px;

@@ -1,3 +1,9 @@
+<li class="nav-item only-mob">
+    <a class="nav-link active" href="/mobile-menu">
+        <i class="ni ni-tv-2 text-primary"></i>
+        <span>{{ __('Меню') }}</span> 
+    </a>
+</li>
 <li class="nav-item">
     <a class="nav-link active" href="{{ route('home') }}">
         <i class="ni ni-tv-2 text-primary"></i>
