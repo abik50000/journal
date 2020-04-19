@@ -97,7 +97,7 @@
 
             @guest()
                 @include('layouts.footers.guest')
-            @endguest
+            @endguest 
         </div>
 
         
