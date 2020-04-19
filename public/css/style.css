@@ -262,3 +262,19 @@ body.menu-open  .ms{
 .nav-link.active .text-primary {
     color: #007dff !important;
 }
+
+.welcome-img {
+    width: 200px;
+    display: block;
+    margin-bottom: 15px;
+}
+@media(min-width: 576px){
+   .welcome-img {
+        width: 300px;
+    } 
+}
+@media(min-width: 1024px){
+   .welcome-img {
+        width: 500px;
+    } 
+}
