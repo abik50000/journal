@@ -63,7 +63,12 @@
             </div>
 
         </div>
-        <div class="col-12 col-lg-8"></div>
+        <div class="col-12 col-lg-4">
+            
+        </div>
+        <div class="col-12 col-lg-4 grey-block">
+            
+        </div>
     </div>        
 </div>
 @endsection
