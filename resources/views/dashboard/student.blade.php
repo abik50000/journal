@@ -22,7 +22,7 @@
                         <span class="title">Математика</span>
                         <span class="grade">5 А класс</span>
                     </div>
-                    <div>
+                    <div class="cabinet-timing">
                         <span class="cabinet">109</span>
                         <span class="timing">8:00 - 8-:45</span>
                     </div>
