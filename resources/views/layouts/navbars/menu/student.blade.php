@@ -11,19 +11,19 @@
     </a>
 </li>
 <li class="nav-item">
-    <a class="nav-link" href="#">
+    <a class="nav-link" href="{{ route('student_diary') }}">
         <i class="fa fa-graduation-cap text-primary"></i> 
         <span>{{ __('Оценки') }}</span> 
     </a>
 </li>
 <li class="nav-item">
-    <a class="nav-link" href="{{ route('student_diary') }}">
+    <a class="nav-link" href="{{ route('student_homeworks') }}">
         <i class="fa fa-tasks text-primary"></i> 
         <span>{{ __('Домашние задания') }}</span> 
     </a>
 </li>
 <li class="nav-item">
-    <a class="nav-link" href="{{ route('student_notifications') }}">
+    <a class="nav-link" href="{{ route('student_achievements') }}">
         <i class="fa fa-trophy text-primary"></i> 
         <span>{{ __('Достижения') }}</span> 
     </a>

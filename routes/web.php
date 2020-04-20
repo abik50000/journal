@@ -37,7 +37,8 @@ Route::group(['middleware' => ['auth', 'admin']], function () {
 Route::group(['middleware' => ['auth', 'student']], function () {
 	Route::get('subjects', 'StudentNavController@subjects'); 
 	Route::get('notifications', 'StudentNavController@notifications')->name('student_notifications'); 
-	Route::get('grades', 'StudentNavController@grades')->name('student_grades'); 
+	Route::get('homeworks', 'StudentNavController@homeworks')->name('student_homeworks'); 
+	Route::get('achievements', 'StudentNavController@achievements')->name('student_achievements'); 
 	Route::get('diary', 'StudentNavController@diary')->name('student_diary'); 
 
 	Route::post('diary/query', 'StudentNavController@diary_month')->name('student_diary_month'); 

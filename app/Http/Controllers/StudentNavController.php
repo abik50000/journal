@@ -31,10 +31,15 @@ class StudentNavController extends Controller
         return view('student.notifications', compact('notifications'));
     }
 
-    public function grades()
+    public function homeworks()
     {
         
-        return view('student.grades');
+        return view('student.homeworks');
+    }
+
+    public function achievements()
+    {
+        return view('student.achievements');
     }
 
     public function diary()
