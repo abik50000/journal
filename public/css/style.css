@@ -485,3 +485,17 @@ box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08);
     background: #1dcf7d;
     color: #fff;
 }
+.spec-col {
+    padding: 0 20px;
+}
+
+.weekday-blocks a {
+    color: black;
+    font-weight: 400;
+}
+.weekday-blocks a.active {
+    font-weight: 700;
+}
+.weekday-blocks {
+    padding: 10px 15px 10px 0;
+}
