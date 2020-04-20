@@ -245,22 +245,22 @@ body.menu-open  .ms{
     transition: all 0.3s ease;
 }
 .ms .navbar-nav .nav-link.active  i {
-    border-left: 2px solid #007dff;
+    border-left: 2px solid #00b7f4;
 }
 #sidenav-open {
         font-size: 22px;
-    color: #007dff;width: 100%;
+    color: #00b7f4;width: 100%;
     padding: 20px 0;
 }
 .nav-link:hover {
-    color: #007dff;
+    color: #00b7f4;
 }
 .nav-link .text-primary {
     color: #e5e5e5 !important;
 }
 .nav-link:hover .text-primary,
 .nav-link.active .text-primary {
-    color: #007dff !important;
+    color: #00b7f4 !important;
 }
 
 .welcome-img {
@@ -385,4 +385,56 @@ box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08);
 }
 .flexer img {
     height: 35px;
+}
+.navbar-top {
+    border-bottom: 2px solid #f3f3f3;
+}
+
+
+/***** stud marks ****/
+
+.mark-btn {
+    padding: 0.3rem 0.75rem;
+    border-radius: 0;
+    border: none !important;
+}
+.notification {
+    color: #eee;
+}
+.notification span {
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    background: #8bc34a;
+    animation: greenlight 2s ease infinite;
+    border-radius: 50%;
+    position: relative;
+    top: -2px;
+}
+@keyframes greenlight {
+    from {
+        
+    }
+    50% {
+        box-shadow: 0 0 5px #8bc34a;
+    }
+    to {
+
+    }
+}
+
+.mark-btn[data-id="1"] {background: #4caf50;}
+.mark-btn[data-id="2"] {background: #8bc34a;}
+.mark-btn[data-id="3"] {background: #ff7600;}
+.mark-btn[data-id="4"] {background: #ff3131;}
+.mark-btn[data-id="5"] {background: #111;}
+
+
+
+/******* */
+
+.lesson-block {
+    box-shadow: 0 0 20px #d4d4d4;
+    padding: 10px;
+    margin-bottom: 10px;
 }
