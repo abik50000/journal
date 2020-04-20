@@ -31,6 +31,12 @@ class StudentNavController extends Controller
         return view('student.notifications', compact('notifications'));
     }
 
+    public function grades()
+    {
+        
+        return view('student.grades');
+    }
+
     public function diary()
     {
         $student = Student::where('user_id', Auth::user()->id)->first();

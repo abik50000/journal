@@ -49,7 +49,7 @@
               <div class="ms">
                 <div class="flexer"> 
                     <a class="btn" id="sidenav-open">
-                        <i class="fas fa-ellipsis-h"></i>
+                        <i class="fa fa-bars"></i>
                     </a>
                     <img src="/img/logo.png" alt="">
                 </div>
