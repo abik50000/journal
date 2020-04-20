@@ -20,11 +20,44 @@
                     <div class="number">1</div>
                     <div class="title-grade">
                         <span class="title">Математика</span>
-                        <span class="grade">5 А класс</span>
+                        <span class="grade">Асан Алиев</span>
                     </div>
                     <div class="cabinet-timing">
                         <span class="cabinet">109</span>
-                        <span class="timing">8:00 - 8-:45</span>
+                        <span class="timing">8:00 - 8:45</span>
+                    </div>
+                </div>
+                <div class="lesson-block">
+                    <div class="number">2</div>
+                    <div class="title-grade">
+                        <span class="title">Казахский язык</span>
+                        <span class="grade">Асан Алиев</span>
+                    </div>
+                    <div class="cabinet-timing">
+                        <span class="cabinet">102</span>
+                        <span class="timing">9:00 - 9:45</span>
+                    </div>
+                </div>
+                <div class="lesson-block">
+                    <div class="number">3</div>
+                    <div class="title-grade">
+                        <span class="title">География</span>
+                        <span class="grade">Асан Алиев</span>
+                    </div>
+                    <div class="cabinet-timing">
+                        <span class="cabinet">125</span>
+                        <span class="timing">10:00 - 10:45</span>
+                    </div>
+                </div>
+                <div class="lesson-block">
+                    <div class="number">4</div>
+                    <div class="title-grade">
+                        <span class="title">Физкультура</span>
+                        <span class="grade">Асан Алиев</span>
+                    </div>
+                    <div class="cabinet-timing">
+                        <span class="cabinet">119</span>
+                        <span class="timing">11:00 - 11:45</span>
                     </div>
                 </div>
             </div>
