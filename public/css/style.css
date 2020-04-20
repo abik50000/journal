@@ -434,7 +434,7 @@ box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08);
 /******* */
 
 .lesson-block {
-    box-shadow: 0 0 20px #d4d4d4;
+    box-shadow: 0 0 20px #f0f0f0;
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 5px;
@@ -471,7 +471,7 @@ box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08);
 
 
 .weekdays {
-    margin-bottom: 15px;
+    margin: 20px 0 25px;
 }
 .weekdays a {
     padding: 15px;
