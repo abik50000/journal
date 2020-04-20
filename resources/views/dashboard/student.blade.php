@@ -1,9 +1,9 @@
 @extends('layouts.app')
 @section('content')
   
-<div class="container mt-3">
+<div class="cont-p">
     <div class="row">
-        <div class="col-12 col-lg-4 spec-col">
+        <div class="col-12 col-lg-4 spec-col col-p">
             <div class="weekday-blocks">
                 <a href="#" class="active">Текущая неделя</a>
                 <a href="#">Следующая неделя</a>
@@ -63,10 +63,10 @@
             </div>
 
         </div>
-        <div class="col-12 col-lg-4">
+        <div class="col-12 col-lg-4 col-p">
             
         </div>
-        <div class="col-12 col-lg-4 grey-block">
+        <div class="col-12 col-lg-4 grey-block col-p">
             
         </div>
     </div>        

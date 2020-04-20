@@ -500,3 +500,11 @@ box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08);
 .grey-block {
     background: #f0f0f0;
 }
+.cont-p .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+.col-p {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
