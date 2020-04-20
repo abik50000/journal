@@ -47,9 +47,9 @@
         <div class="wrapper">
             @auth()
               <div class="ms">
-                <div class="flexer">
+                <div class="flexer"> 
                     <a class="btn" id="sidenav-open">
-                        <i class="fa fa-bars"></i>
+                        <i class="fas fa-ellipsis-h"></i>
                     </a>
                     <img src="/img/logo.png" alt="">
                 </div>
