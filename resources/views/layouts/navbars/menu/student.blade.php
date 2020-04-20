@@ -1,30 +1,30 @@
 <li class="nav-item only-mob">
     <a class="nav-link" href="/mobile-menu">
-        <i class="fas fa-users text-primary"></i>
+        <i class="fas fa-compass text-primary"></i>
         <span>{{ __('Меню') }}</span> 
     </a>
 </li>
 <li class="nav-item">
     <a class="nav-link active" href="{{ route('home') }}">
-        <i class="ni ni-tv-2 text-primary"></i>
-        <span>{{ __('Панель') }}</span> 
-    </a>
-</li>
-<li class="nav-item">
-    <a class="nav-link" href="#">
-        <i class="ni ni-planet text-primary"></i> 
+        <i class="fa fa-table text-primary"></i>
         <span>{{ __('Расписание') }}</span> 
     </a>
 </li>
 <li class="nav-item">
+    <a class="nav-link" href="#">
+        <i class="fa fa-graduation-cap text-primary"></i> 
+        <span>{{ __('Оценки') }}</span> 
+    </a>
+</li>
+<li class="nav-item">
     <a class="nav-link" href="{{ route('student_diary') }}">
-        <i class="ni ni-pin-3 text-primary"></i> 
-        <span>{{ __('Дневник') }}</span> 
+        <i class="fa fa-tasks text-primary"></i> 
+        <span>{{ __('Домашние задания') }}</span> 
     </a>
 </li>
 <li class="nav-item">
     <a class="nav-link" href="{{ route('student_notifications') }}">
-        <i class="ni ni-bell-55 text-primary"></i> 
-        <span>{{ __('Уведомления') }}</span> 
+        <i class="fa fa-trophy text-primary"></i> 
+        <span>{{ __('Достижения') }}</span> 
     </a>
 </li>
