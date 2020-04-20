@@ -429,7 +429,65 @@ box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08);
 .mark-btn[data-id="4"] {background: #ff3131;}
 .mark-btn[data-id="5"] {background: #111;}
 
+.mark-btn {
+    padding: 0.3rem 0.75rem;
+    border-radius: 0;
+    border: none !important;
+}
+.notification {
+    color: #eee;
+}
+.notification span {
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    background: #8bc34a;
+    animation: greenlight 2s ease infinite;
+    border-radius: 50%;
+    position: relative;
+    top: -2px;
+}
+@keyframes greenlight {
+    from {
+        
+    }
+    50% {
+        box-shadow: 0 0 5px #8bc34a;
+    }
+    to {
 
+    }
+}
+.card .table td, .card .table th {
+    padding-right: 0;
+    padding-left: 0;
+}
+.table th, .table td {
+    padding: 2px 3px;
+}
+.mark-cell {
+    text-align: center;
+    background: #fcf8e3;
+}
+.day-cell {
+    text-align: center;
+}
+.mark-btn[data-id="1"] {background: #4caf50;}
+.mark-btn[data-id="2"] {background: #8bc34a;}
+.mark-btn[data-id="3"] {background: #ff7600;}
+.mark-btn[data-id="4"] {background: #ff3131;}
+.mark-btn[data-id="5"] {background: #111;}
+
+.table {
+    background: #fff;
+}
+td.type-1,
+th.type-1 {
+    background: #7db1ff;
+}
+.card .table td:first-child, .card .table th:first-child {
+    padding: 3px 5px;
+}
 
 /******* */
 
