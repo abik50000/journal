@@ -468,3 +468,20 @@ box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08);
     align-items: center;
     padding: 5px 15px;
 }
+
+
+.weekdays {
+    margin-bottom: 15px;
+}
+.weekdays a {
+    padding: 15px;
+    background: #fff;
+    margin-right: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px #f0f0f0;
+}
+
+.weekdays a.active {
+    background: #1dcf7d;
+    color: #fff;
+}

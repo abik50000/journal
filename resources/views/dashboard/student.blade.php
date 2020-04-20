@@ -9,7 +9,7 @@
                 <a href="#">Следующая неделя</a>
             </div>
             <div class="weekdays">
-                <a href="#">Пн</a>
+                <a href="#" class="active">Пн</a>
                 <a href="#">Вт</a>
                 <a href="#">Ср</a>
                 <a href="#">Чт</a>
