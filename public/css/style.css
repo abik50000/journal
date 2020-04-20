@@ -492,10 +492,8 @@ box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08);
 .weekday-blocks a {
     color: black;
     font-weight: 400;
+    padding: 10px 15px 10px 0;
 }
 .weekday-blocks a.active {
     font-weight: 700;
-}
-.weekday-blocks {
-    padding: 10px 15px 10px 0;
 }

@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-12 col-lg-4 spec-col">
             <div class="weekday-blocks">
-                <a href="#">Текущая неделя</a>
+                <a href="#" class="active">Текущая неделя</a>
                 <a href="#">Следующая неделя</a>
             </div>
             <div class="weekdays">
