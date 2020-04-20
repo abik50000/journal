@@ -1,6 +1,5 @@
 @extends('layouts.app')
 @section('content')
-@include('layouts.headers.cards')
   
 <div class="container mt-3">
     <div class="row">
@@ -19,9 +18,9 @@
             <div class="lessons">
                 <div class="lesson-block">
                     <div class="number">1</div>
-                    <div>
+                    <div class="title-grade">
                         <span class="title">Математика</span>
-                        <span class="gradeclass">5 А класс</span>
+                        <span class="grade">5 А класс</span>
                     </div>
                     <div>
                         <span class="cabinet">109</span>
