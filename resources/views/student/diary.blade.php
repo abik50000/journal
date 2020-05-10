@@ -2,9 +2,9 @@
 @section('content')
 
 
-<div id="app">
+
     <student-diary></student-diary>
-</div>
+
 @endsection
 @section('scripts')
 <script>
