@@ -44,7 +44,7 @@
  
 
 
-        <div class="wrapper">
+        <div class="wrapper" id="app">
             @auth()
               <div class="ms">
                 <div class="flexer"> 
@@ -116,6 +116,7 @@
         <script src="/js/select2/select2.min.js"></script>
         <!--         <script src="/js/require.js"></script> -->        
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="{!! asset('js/app.js') !!}"></script>
 
         @stack('js')
         @yield('scripts')
