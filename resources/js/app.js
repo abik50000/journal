@@ -11,7 +11,7 @@ window.Vue = require('vue');
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue
  * components and automatically register them with their "basename".
- *
+ * 
  * Eg. ./components/ExampleComponent.vue -> <example-component></example-component>
  */
 
@@ -27,6 +27,6 @@ Vue.component('student-timetable', require('./components/StudentTimetableCompone
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-const app = new Vue({
+const app = new Vue({ 
     el: '#app',
 });

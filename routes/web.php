@@ -34,6 +34,21 @@ Route::group(['middleware' => ['auth', 'admin']], function () {
 });
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Route::group(['middleware' => ['auth', 'student']], function () {
 	Route::get('subjects', 'StudentNavController@subjects'); 
 	Route::get('notifications', 'StudentNavController@notifications')->name('student_notifications'); 
@@ -42,7 +57,34 @@ Route::group(['middleware' => ['auth', 'student']], function () {
 	Route::get('diary', 'StudentNavController@diary')->name('student_diary'); 
 
 	Route::post('diary/query', 'StudentNavController@diary_month')->name('student_diary_month'); 
+
+
+
+
+	Route::get('start/get-json', 'StudentJSONController@getJson'); 
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 Route::group(['middleware' => ['auth', 'teacher']], function () {

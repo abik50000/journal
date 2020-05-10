@@ -1991,14 +1991,30 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
-  props: ['urldata'],
+  data: function data() {
+    return {
+      urldata: [],
+      is_refresh: false,
+      id: 0
+    };
+  },
   mounted: function mounted() {
     this.update();
   },
   methods: {
     update: function update() {
-      console.log(this.urldata);
+      var _this = this;
+
+      this.is_refresh = true;
+      axios.get('/start/get-json').then(function (response) {
+        console.log(response);
+        _this.urldata = response.data;
+        _this.is_refresh = false;
+        _this.id++;
+      });
     }
   }
 });
@@ -37431,6 +37447,20 @@ var render = function() {
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "card-body" }, [
+            !_vm.is_refresh
+              ? _c(
+                  "button",
+                  { staticClass: "btn btn-default", on: { click: _vm.update } },
+                  [_vm._v("обновить - " + _vm._s(_vm.id) + "...")]
+                )
+              : _vm._e(),
+            _vm._v(" "),
+            _vm.is_refresh
+              ? _c("span", { staticClass: "badge badge-primary mb-l" }, [
+                  _vm._v("Обновление...")
+                ])
+              : _vm._e(),
+            _vm._v(" "),
             _c(
               "table",
               [
@@ -49646,7 +49676,7 @@ window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue
  * components and automatically register them with their "basename".
- *
+ * 
  * Eg. ./components/ExampleComponent.vue -> <example-component></example-component>
  */
 // const files = require.context('./', true, /\.vue$/i)

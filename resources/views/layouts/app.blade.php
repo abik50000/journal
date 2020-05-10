@@ -115,7 +115,7 @@
         <script src="{{ asset('argon') }}/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
         <script src="/js/select2/select2.min.js"></script>
         <!--         <script src="/js/require.js"></script> -->        
-        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<!--         <script src="https://unpkg.com/axios/dist/axios.min.js"></script> -->
         <script src="{!! asset('js/app.js') !!}"></script>
 
         @stack('js')
