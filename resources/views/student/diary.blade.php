@@ -2,9 +2,9 @@
 @section('content')
 
 
-
+<div class="mt-4">
     <student-diary></student-diary>
-
+</div>
 @endsection
 @section('scripts')
 

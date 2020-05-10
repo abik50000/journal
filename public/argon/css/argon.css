@@ -15439,7 +15439,7 @@ button.section-darker:focus
 }
 
 .bg-gradient-default {
-    background: linear-gradient(87deg, #00c4ff 0, #00c4ff 100%) !important;
+    background: #a5e3ff !important;
 }
 
 .bg-gradient-white
