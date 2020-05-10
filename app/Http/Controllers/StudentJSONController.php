@@ -60,8 +60,7 @@ class StudentJSONController extends Controller
         return [
             [
                 'subject_array' => $subject_array,
-                'days' => $days,
-                'this_month' => $this_month
+                'days' => $days
             ]
         ];
     }
