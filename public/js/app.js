@@ -37537,7 +37537,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "container" }, [
+  return _c("div", { staticClass: "container-fluid" }, [
     _c("div", { staticClass: "row" }, [
       _c("div", { staticClass: "col-xl-12 mb-5 mb-xl-0" }, [
         _c("div", { staticClass: "card bg-gradient-default shadow" }, [
