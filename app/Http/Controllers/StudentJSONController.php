@@ -39,7 +39,7 @@ class StudentJSONController extends Controller
 
     public function getDiaryJson(Request $request)
     {
-
+        dd($request);
         $student = Student::where('user_id', Auth::user()->id)->first();
         //dd(Mark::whereMonth('day', '=', Carbon::createFromFormat('m', $request->month)->format('m'))->where('student_id', $student->id)->get());
 
