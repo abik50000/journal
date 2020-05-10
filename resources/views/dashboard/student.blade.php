@@ -61,8 +61,9 @@
                     </div>
                 </div>
             </div>
-            <student-timetable :urldata="{{ json_encode($url_data) }}"></student-timetable>
-
+            <student-timetable></student-timetable>
+<!--             <student-timetable :urldata="{{ json_encode($url_data) }}"></student-timetable>
+ -->
         </div>
         <div class="col-12 col-lg-4 col-p">
             
