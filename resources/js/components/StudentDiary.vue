@@ -68,7 +68,7 @@
             update: function() {
                 this.is_refresh = true;
                 axios({
-                  method: 'post',
+                  method: 'get',
                   url: '/diary/query',
                   data: [{
                     month: 2
