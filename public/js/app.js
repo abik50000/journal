@@ -2039,7 +2039,7 @@ __webpack_require__.r(__webpack_exports__);
         method: 'get',
         url: '/diary/query',
         params: {
-          month: 12345
+          month: 2
         }
       }).then(function (response) {
         console.log(response);

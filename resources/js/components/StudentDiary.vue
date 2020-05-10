@@ -71,7 +71,7 @@
                   method: 'get',
                   url: '/diary/query',
                   params: {
-                    month: 12345
+                    month: 2
                   }
                 }).then((response) =>{
                     console.log(response);
