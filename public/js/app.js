@@ -2038,9 +2038,9 @@ __webpack_require__.r(__webpack_exports__);
       axios({
         method: 'get',
         url: '/diary/query',
-        data: [{
-          month: 2
-        }]
+        params: {
+          month: 12345
+        }
       }).then(function (response) {
         console.log(response);
         _this.urldata = response.data;

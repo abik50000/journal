@@ -70,9 +70,9 @@
                 axios({
                   method: 'get',
                   url: '/diary/query',
-                  data: [{
-                    month: 2
-                  }]
+                  params: {
+                    month: 12345
+                  }
                 }).then((response) =>{
                     console.log(response);
                     this.urldata = response.data;
