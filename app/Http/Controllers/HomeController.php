@@ -30,7 +30,16 @@ class HomeController extends Controller
     public function index()
     {
 
-        
+        $url_data = [
+            [
+                'title' => 'DKA-develop',
+                'url' => 'https://dka-develop.ru',
+            ],
+            [
+                'title' => 'Youtube',
+                'url' => 'https://youtube.com',
+            ]
+        ];
 
 
         if(Auth::user()->isAdmin()) {
@@ -71,7 +80,9 @@ class HomeController extends Controller
                 $note->save();
             }
 
-            return view('dashboard.student', compact('timetables', 'subjects', 'notifications'));
+            return view('dashboard.student', compact('timetables', 'subjects', 'notifications'))->with([
+                'url_data' => $url_data
+            ]);
         }
 
         if(Auth::user()->isTeacher()) {

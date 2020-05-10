@@ -17,7 +17,7 @@
             </div>
             <div class="lessons">
                 <div class="lesson-block">
-                    <div class="number">1</div>
+                    <div class="number">1</div> 
                     <div class="title-grade">
                         <span class="title">Математика</span>
                         <span class="grade">Асан Алиев</span>
@@ -61,6 +61,7 @@
                     </div>
                 </div>
             </div>
+            <student-timetable :urldata="{{ json_encode($url_data) }}"></student-timetable>
 
         </div>
         <div class="col-12 col-lg-4 col-p">

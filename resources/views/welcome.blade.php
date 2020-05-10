@@ -16,6 +16,5 @@
     </div>
 
     <div class="container mt--10 pb-5">
-        <example-component></example-component> 
     </div>
 @endsection
