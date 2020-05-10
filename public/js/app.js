@@ -37568,12 +37568,19 @@ var render = function() {
                       "table",
                       { staticClass: "table" },
                       [
-                        _vm._m(1),
-                        _vm._l(_vm.urldata["days"], function(day) {
-                          return _c("tr", { staticClass: "day-cell" }, [
-                            _vm._v(_vm._s(day["day"]))
-                          ])
-                        }),
+                        _c(
+                          "tr",
+                          [
+                            _c("th", [_vm._v("# / День")]),
+                            _vm._v(" "),
+                            _vm._l(_vm.urldata["days"], function(day) {
+                              return _c("th", { staticClass: "day-cell" }, [
+                                _vm._v(_vm._s(day["day"]))
+                              ])
+                            })
+                          ],
+                          2
+                        ),
                         _vm._v(" "),
                         _vm._l(_vm.urldata["subject_array"], function(subject) {
                           return _c(
@@ -37622,12 +37629,6 @@ var staticRenderFns = [
         _c("option", { attrs: { value: "3" } }, [_vm._v("Март")])
       ]
     )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("tr", [_c("th", [_vm._v("# / День")])])
   }
 ]
 render._withStripped = true
