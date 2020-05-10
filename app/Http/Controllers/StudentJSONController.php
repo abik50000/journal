@@ -58,10 +58,8 @@ class StudentJSONController extends Controller
 
 
         return [
-            [
                 'subject_array' => $subject_array,
                 'days' => $days
-            ]
         ];
     }
 
