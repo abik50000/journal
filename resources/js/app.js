@@ -20,6 +20,7 @@ window.Vue = require('vue');
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 Vue.component('student-timetable', require('./components/StudentTimetableComponent.vue').default);
+Vue.component('student-diary', require('./components/StudentDiary.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

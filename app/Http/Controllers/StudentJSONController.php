@@ -36,6 +36,36 @@ class StudentJSONController extends Controller
         ];
     }
 
+
+    public function getDiaryJson(Request $request)
+    {
+
+        $student = Student::where('user_id', Auth::user()->id)->first();
+        //dd(Mark::whereMonth('day', '=', Carbon::createFromFormat('m', $request->month)->format('m'))->where('student_id', $student->id)->get());
+
+        $subject_array = [];
+        $subjects = Subject::where('class', $student->grade_id)->get();
+            
+        $days = Day::whereMonth('day', '=', Carbon::createFromFormat('m', $request->month)->format('m'))->orderBy('day', 'asc')->get();
+
+        foreach ($subjects as $subject) {
+            $subject_array[] = [
+                'subject' => $subject->name,
+                'marks' => $subject->marks($student->id, $days)
+            ];
+
+        }
+
+
+        return [
+            [
+                'subject_array' => $subject_array,
+                'days' => $days,
+                'this_month' => $this_month
+            ]
+        ];
+    }
+
    
   
 }
