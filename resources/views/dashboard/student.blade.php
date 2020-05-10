@@ -61,7 +61,7 @@
                     </div>
                 </div>
             </div>
-            <student-timetable></student-timetable>
+           <!--  <student-timetable></student-timetable> -->
 <!--             <student-timetable :urldata=" {json_encode($url_data) }"></student-timetable>
  -->
         </div>
