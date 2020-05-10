@@ -7,24 +7,7 @@
 
 @endsection
 @section('scripts')
-<script>
-var app = new Vue({
-    el: '#app',
-    data: {
-        days: [
-            {
-                day: '1.04',
-                subjects: [
-                    mark: '4',
-                    subject: 'Математика'
-                ],
-            }
-        ]
-    },
-    methods: {
-    }
-});
-</script>
+
 @endsection
 
 @push('js')
