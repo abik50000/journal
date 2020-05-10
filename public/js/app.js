@@ -37575,7 +37575,7 @@ var render = function() {
                             _vm._v(" "),
                             _vm._l(_vm.urldata["days"], function(day) {
                               return _c("th", { staticClass: "day-cell" }, [
-                                _vm._v(_vm._s(day["day"]))
+                                _vm._v(_vm._s(day["day"].substr(8, 2)))
                               ])
                             })
                           ],

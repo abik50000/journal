@@ -30,7 +30,7 @@
                                         <table class="table">
                                             <tr>
                                                 <th># / День</th>
-                                                <th v-for="day in urldata['days']" class="day-cell">{{ day['day'] }}</th>
+                                                <th v-for="day in urldata['days']" class="day-cell">{{  day['day'].substr(8, 2) }}</th>
                                             </tr>
                                             <tr v-for="subject in urldata['subject_array']">
                                                   <td>{{ subject['subject'] }}</td>
