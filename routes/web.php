@@ -57,7 +57,7 @@ Route::group(['middleware' => ['auth', 'student']], function () {
 	Route::get('diary', 'StudentNavController@diary')->name('student_diary'); 
 
 	//Route::post('diary/query', 'StudentNavController@diary_month')->name('student_diary_month'); 
-	Route::get('diary/query', 'StudentNavController@getDiaryJson')->name('student_diary_month'); 
+	Route::get('diary/query', 'StudentJSONController@getDiaryJson')->name('student_diary_month'); 
 
 
 
