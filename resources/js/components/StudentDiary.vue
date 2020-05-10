@@ -14,10 +14,11 @@
                                 display: -o-flex;
                                 display: flex;">
                                     
-                                    <select name="month" id="" style="border-radius: 0">
-                                        <option value="1">Январь </option>
-                                        <option value="2">Февраль</option>
-                                        <option value="3">Март</option>
+                                    <select name="month" id="" style="border-radius: 0" v-model="selected">
+                                        <option :value="1" >Январь </option>
+                                        <option :value="2">Февраль</option>
+                                        <option :value="3">Март</option>
+
                                     </select>
                                     <button class="btn btn-primary" style="border-radius: 0" @click="update">
                                         Перейти
@@ -58,7 +59,8 @@
             return {
                 urldata: [],
                 is_refresh: false,
-                id: 0 
+                id: 0,
+                selected: 1
             }
         },
         mounted() {
@@ -71,7 +73,7 @@
                   method: 'get',
                   url: '/diary/query',
                   params: {
-                    month: 2
+                    month: this.selected
                   }
                 }).then((response) =>{
                     console.log(response);

@@ -2019,12 +2019,14 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
       urldata: [],
       is_refresh: false,
-      id: 0
+      id: 0,
+      selected: 1
     };
   },
   mounted: function mounted() {
@@ -2039,7 +2041,7 @@ __webpack_require__.r(__webpack_exports__);
         method: 'get',
         url: '/diary/query',
         params: {
-          month: 2
+          month: this.selected
         }
       }).then(function (response) {
         console.log(response);
@@ -37543,7 +37545,47 @@ var render = function() {
             _c("div", { staticClass: "row align-items-center" }, [
               _c("div", { staticClass: "col col-xl-12 mb-3" }, [
                 _c("div", { staticStyle: { display: "flex" } }, [
-                  _vm._m(0),
+                  _c(
+                    "select",
+                    {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.selected,
+                          expression: "selected"
+                        }
+                      ],
+                      staticStyle: { "border-radius": "0" },
+                      attrs: { name: "month", id: "" },
+                      on: {
+                        change: function($event) {
+                          var $$selectedVal = Array.prototype.filter
+                            .call($event.target.options, function(o) {
+                              return o.selected
+                            })
+                            .map(function(o) {
+                              var val = "_value" in o ? o._value : o.value
+                              return val
+                            })
+                          _vm.selected = $event.target.multiple
+                            ? $$selectedVal
+                            : $$selectedVal[0]
+                        }
+                      }
+                    },
+                    [
+                      _c("option", { domProps: { value: 1 } }, [
+                        _vm._v("Январь ")
+                      ]),
+                      _vm._v(" "),
+                      _c("option", { domProps: { value: 2 } }, [
+                        _vm._v("Февраль")
+                      ]),
+                      _vm._v(" "),
+                      _c("option", { domProps: { value: 3 } }, [_vm._v("Март")])
+                    ]
+                  ),
                   _vm._v(" "),
                   _c(
                     "button",
@@ -37610,27 +37652,7 @@ var render = function() {
     ])
   ])
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "select",
-      {
-        staticStyle: { "border-radius": "0" },
-        attrs: { name: "month", id: "" }
-      },
-      [
-        _c("option", { attrs: { value: "1" } }, [_vm._v("Январь ")]),
-        _vm._v(" "),
-        _c("option", { attrs: { value: "2" } }, [_vm._v("Февраль")]),
-        _vm._v(" "),
-        _c("option", { attrs: { value: "3" } }, [_vm._v("Март")])
-      ]
-    )
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 
